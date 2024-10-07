@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebarLeft {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.setting{
+    margin-left: 40%;
+    width: 30px;
+    height: 30px;
+}
+
+.setting:hover{
+    background-color: #494949;
+    opacity: 0.4;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.search input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+.chat-list {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.chat-item1 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-item1:hover {
+    background-color: #ddd;
+}
+
+.chat-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Right Site */
+.chat-windowRight {
+    width: 70%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 15px;
+    background-color: #075e54;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.chat-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.callVideoIcon{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60%;
+
+}
+
+.callIcon{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+.callIcon:hover{
+    background-color: #ddd;
+    opacity: 0.4;
+    color: rgb(134, 4, 47);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.videoOff{
+    width: 30px;
+    height: 30px;
+    padding: 10px;  
+}
+
+.videoOff:hover{
+    background-color: #ddd;
+    opacity: 0.4;
+    color: rgb(134, 4, 47);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #f2e9e0;
+    
+}
+
+.message {
+    margin-bottom: 15px;
+}
+
+.message.received {
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.message.received p {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.message.sent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* সেন্ট বার্তাগুলিকে ডানে নিয়ে আসে */
+}
+
+.message.sent p {
+    background-color: #dcf8c6;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    margin-left: auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+
+}
+
+/* local Time Set */
+
+.message-time {
+    font-size: 0.8em; /* সময়ের জন্য ছোট ফন্ট সাইজ */
+    color: #888; /* সময়ের জন্য হালকা রং */
+    display: block; /*বার্তা প্যারাগ্রাফের নিচে দেখানোর জন্য ব্লক */
+    margin-top: 10px; /* সামান্য ফাঁকা জায়গা */
+}
+
+.chat-input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.emoji-icon {
+    display: flex;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.attachment-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.chat-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.microphone-icon {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.chat-input-container i {
+    cursor: pointer;
+}
+
+/* Optional: Add a hover effect on icons */
+.emoji-icon:hover, .attachment-icon:hover, .microphone-icon:hover {
+    color: #888;
+}
+
+.send-button {
+    background-color: #075e54;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
